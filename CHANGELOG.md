@@ -1,5 +1,44 @@
 # Changelog
 
+## [12.0.0](https://github.com/AstroNvim/astrocommunity/compare/v11.1.0...v12.0.0) (2024-07-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* **grug-far-nvim:** incorrectly caregorized, moved from `project` to `search`
+* **nvim-spectre:** incorrectly categorized, moved from `project` to `search`
+
+### Features
+
+* **editing-support:** add `nvim-origami` ([#1098](https://github.com/AstroNvim/astrocommunity/issues/1098)) ([a683346](https://github.com/AstroNvim/astrocommunity/commit/a683346a59159a9d9e782c338a75a11fa4d99a55))
+* **go:** configure language specific icons in `mini.icons` ([7f0316d](https://github.com/AstroNvim/astrocommunity/commit/7f0316dead2c7fb58a27b5d41a5763fba255f4f2))
+* **lsp:** add `nvim-java` plugin ([#1110](https://github.com/AstroNvim/astrocommunity/issues/1110)) ([c43e5a7](https://github.com/AstroNvim/astrocommunity/commit/c43e5a7519ee7b26886147b74cadff2fc43a3fc2))
+* **pack:** add Chezmoi pack ([#1102](https://github.com/AstroNvim/astrocommunity/issues/1102)) ([ccb2f57](https://github.com/AstroNvim/astrocommunity/commit/ccb2f57a5a7e78b64d56f2044c14b483b6e78d9c))
+* **pack:** remove opinionated config from `rust` pack ([#1111](https://github.com/AstroNvim/astrocommunity/issues/1111)) ([c7d3b71](https://github.com/AstroNvim/astrocommunity/commit/c7d3b719b6b8e170c4cc14495f34f6d15024e5a8))
+* **test:** add vim-test ([#1112](https://github.com/AstroNvim/astrocommunity/issues/1112)) ([4e33ed3](https://github.com/AstroNvim/astrocommunity/commit/4e33ed3b1cc090994b75ac1aa63eec21b46d2a82))
+* **typescript:** configure language specific icons in `mini.icons` ([db07ec9](https://github.com/AstroNvim/astrocommunity/commit/db07ec9f77d8cdafbfa3ccf75c08e13b9c4901c6))
+
+
+### Bug Fixes
+
+* **blade:** fix incorrect pattern ([09b796f](https://github.com/AstroNvim/astrocommunity/commit/09b796fbb2f73c4eb82e3dd22d2913f78d10477e))
+* **blade:** fix incorrect pattern `.` literal ([26bd7b4](https://github.com/AstroNvim/astrocommunity/commit/26bd7b4cbe9a513b8653e7093c86bfd6f630cc99))
+* **conform-nvim:** update to using new `default_format_opts` configuration ([876032f](https://github.com/AstroNvim/astrocommunity/commit/876032f22ccc2f95cc5853cd3fd089ec199239cc))
+* **disable-tabline:** make sure to remove any changes to the default `showtabline` ([71f26b6](https://github.com/AstroNvim/astrocommunity/commit/71f26b6a774a0027d356d836e64bec7294f065f2))
+* **grug-far-nvim:** Disable Copilot in grug-far buffers ([26e0364](https://github.com/AstroNvim/astrocommunity/commit/26e0364c9ddd6262a50cd6d25b6c0f065cad7063))
+* **grug-far-nvim:** incorrectly caregorized, moved from `project` to `search` ([efa50bc](https://github.com/AstroNvim/astrocommunity/commit/efa50bc24cf5ddf4e923b1b5db29de49e944d587))
+* **gruq-far-nvim:** copilot should be optional ([5936739](https://github.com/AstroNvim/astrocommunity/commit/59367397114d52efd79a7716b27e1ba8aa78483f))
+* **just:** use native treesitter parser ([#1100](https://github.com/AstroNvim/astrocommunity/issues/1100)) ([bd09782](https://github.com/AstroNvim/astrocommunity/commit/bd097825c05cd688b92a34d5c65cbe5085e6cad7))
+* **main:** Swap out usage of `name = *` in mapping declaration with `desc = *` to conform with which-key v3 ([#1107](https://github.com/AstroNvim/astrocommunity/issues/1107)) ([f3b598f](https://github.com/AstroNvim/astrocommunity/commit/f3b598f51cd78a1c1a9e8c094622a108689e4028))
+* **mini-clue:** update to new `which-key` v3 changes ([2c5063b](https://github.com/AstroNvim/astrocommunity/commit/2c5063bc9126feddc7fcc51b8cdf19c78819c39c))
+* **nix:** `nixd` should not be installed through mason ([44e8c95](https://github.com/AstroNvim/astrocommunity/commit/44e8c959bb66a76a98efee588fe7bc56b8ecf754))
+* **nix:** Actually use nixd LSP ([#1101](https://github.com/AstroNvim/astrocommunity/issues/1101)) ([eece4c6](https://github.com/AstroNvim/astrocommunity/commit/eece4c6349f6bd81865d26b90727f20e5f8fb295))
+* **nix:** AstroLSP should be optional ([09a82e1](https://github.com/AstroNvim/astrocommunity/commit/09a82e154d407d75e8781889d86a4557f1328250))
+* **nvim-context-vt:** remove use of `name` in mappings ([b882cbb](https://github.com/AstroNvim/astrocommunity/commit/b882cbb55f5c837736f6db5d0e2c3ac7677f3fcb))
+* **nvim-spectre:** incorrectly categorized, moved from `project` to `search` ([348c59d](https://github.com/AstroNvim/astrocommunity/commit/348c59dc280bbe9cadd0204c300070852c3489e3))
+* **trouble-nvim:** prevent clashes with existing `&lt;Leader&gt;x` mappings ([#1105](https://github.com/AstroNvim/astrocommunity/issues/1105)) ([081a98b](https://github.com/AstroNvim/astrocommunity/commit/081a98b0c14804c42c213e557ebe83512cb478c8))
+* **typescript:** `mini.icons` should be optional ([cb2eea3](https://github.com/AstroNvim/astrocommunity/commit/cb2eea3147d37a83dfbee8438cfeb849d87d4c1d))
+
 ## [11.1.0](https://github.com/AstroNvim/astrocommunity/compare/v11.0.0...v11.1.0) (2024-07-08)
 
 
